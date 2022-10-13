@@ -1,0 +1,72 @@
+node-beeper (2.1.0+~1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-beeper: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 2.1.0+~1.2.0
+
+ -- Yadd <yadd@debian.org>  Sun, 10 Oct 2021 20:39:19 +0200
+
+node-beeper (2.1.0+~1.1.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove 1 unused lintian overrides.
+
+  [ Xavier Guimard ]
+  * Remove overrides for lintian tags that are no longer supported.
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Add ctype=nodejs to component(s)
+  * Use dh-sequence-nodejs
+  * Replace "delay" component by "yoctodelay" and provide it
+  * New upstream version 2.1.0+~1.1.0
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 04 Jan 2021 16:22:29 +0100
+
+node-beeper (2.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 08:38:30 +0100
+
+node-beeper (2.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Use pkg-js-tools auto install
+  * Fix test
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 2.0.0
+  * Update copyright
+  * Replace ava by tape for test (not enable: works only in interactive mode)
+  * Embed component: delay
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 20 Feb 2020 09:32:13 +0100
+
+node-beeper (1.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.1.1
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.2.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 03 Aug 2018 17:15:09 +0530
+
+node-beeper (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #840924)
+
+ -- Sagar Ippalpalli <i.vikram15@gmail.com>  Sun, 16 Oct 2016 10:44:33 +0530

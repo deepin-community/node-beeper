@@ -1,0 +1,55 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-02-20
+
+--- a/test.js
++++ b/test.js
+@@ -1,6 +1,6 @@
+-import {serial as test} from 'ava';
+-import hooker from 'hooker';
+-import beeper from '.';
++const test = require('tape');
++const hooker = require('hooker');
++const beeper = require('.');
+ 
+ const BEEP_CHARACTER = '\u0007';
+ 
+@@ -17,6 +17,7 @@
+ 
+ 	hooker.unhook(process.stdout, 'write');
+ 	t.is(i, 1);
++	t.end();
+ });
+ 
+ function testBeepCount(count) {
+@@ -33,6 +34,7 @@
+ 
+ 		hooker.unhook(process.stdout, 'write');
+ 		t.is(i, count);
++		t.end();
+ 	});
+ }
+ 
+@@ -47,6 +49,7 @@
+ 	} catch (error) {
+ 		t.pass();
+ 	}
++	t.end();
+ });
+ 
+ test('negative count should throw exception', async t => {
+@@ -56,6 +59,7 @@
+ 	} catch (error) {
+ 		t.pass();
+ 	}
++	t.end();
+ });
+ 
+ test('melody', async t => {
+@@ -71,4 +75,5 @@
+ 
+ 	hooker.unhook(process.stdout, 'write');
+ 	t.is(i, 2);
++	t.end();
+ });

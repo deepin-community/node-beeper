@@ -1,0 +1,12 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-beeper-$1.tar.gz/ \
+ https://github.com/sindresorhus/beeper/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=yoctodelay,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-yoctodelay-$1.tar.gz/ \
+ https://github.com/sindresorhus/yoctodelay/tags .*/archive/.*/v?([\d\.]+).tar.gz group
